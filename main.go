@@ -18,16 +18,19 @@ Host a
     HostName {{ .IP_A }}
     User isucon
     ServerAliveInterval 60
+    ForwardAgent yes
 
 Host b
     HostName {{ .IP_B }}
     User isucon
     ServerAliveInterval 60
+    ForwardAgent yes
 
 Host c
     HostName {{ .IP_C }}
     User isucon
     ServerAliveInterval 60
+    ForwardAgent yes
 `
 
 func main() {
